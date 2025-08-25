@@ -1873,6 +1873,32 @@ console.clear();
 
 
 
+let input = document.querySelector("input")
+let button = document.querySelector("button")
+let ol = document.querySelector("ol")
+
+button.addEventListener("click",()=>{
+    let storeInpVal = input.value
+    let li = document.createElement("li")
+
+    li.innerText = storeInpVal
+    li.style.cursor="pointer"
+
+    console.log(li);
+    ol.append(li)
+    li.addEventListener("click",()=>{
+        li.remove()
+    })
+    
+})
+
+
+
+
+
+
+
+
 
 
 
