@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body class="body">
+<body>
 
-    <input type="text">
-    <button>save</button>
+    <!-- <input type="text">
+    <button type="button">save</button>
     <ol>
-       <!-- <li>hello</li>
-       <li>hi</li> -->
-    </ol>
+      
+    </ol> -->
+
+    <div class="calculator">
+        <input type="text">
+        <button type="button" onclick="clickVal('%')">%</button>
+        <button type="button" onclick="delAll()">C</button>
+        <button type="button" onclick="del()">Del</button>
+        <button type="button" onclick="clickVal('/')">/</button>
+        <button type="button" onclick="clickVal('7')">7</button>
+        <button type="button" onclick="clickVal('8')">8</button>
+        <button type="button" onclick="clickVal('9')">9</button>
+        <button type="button" onclick="clickVal('*')">*</button>
+        <button type="button" onclick="clickVal('4')">4</button>
+        <button type="button" onclick="clickVal('5')">5</button>
+        <button type="button" onclick="clickVal('6')">6</button>
+        <button type="button" onclick="clickVal('-')">-</button>
+        <button type="button" onclick="clickVal('1')">1</button>
+        <button type="button" onclick="clickVal('2')">2</button>
+        <button type="button" onclick="clickVal('3')">3</button>
+        <button type="button" onclick="clickVal('+')">+</button>
+        <button type="button" onclick="clickVal('00')">00</button>
+        <button type="button" onclick="clickVal('0')">0</button>
+        <button type="button" onclick="clickVal('.')">.</button>
+        <button type="button" class="equal" onclick="eq()">=</button>
+    </div>
+
 
  
     

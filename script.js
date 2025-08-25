@@ -1873,28 +1873,44 @@ console.clear();
 
 
 
-let input = document.querySelector("input")
-let button = document.querySelector("button")
-let ol = document.querySelector("ol")
+// let input = document.querySelector("input")
+// let button = document.querySelector("button")
+// let ol = document.querySelector("ol")
 
-button.addEventListener("click",()=>{
-    let storeInpVal = input.value
-    let li = document.createElement("li")
+// button.addEventListener("click",()=>{
+//     let storeInpVal = input.value
+//     let li = document.createElement("li")
 
-    li.innerText = storeInpVal
-    li.style.cursor="pointer"
+//     li.innerText = storeInpVal
+//     li.style.cursor="pointer"
 
-    console.log(li);
-    ol.append(li)
-    li.addEventListener("click",()=>{
-        li.remove()
-    })
+//     console.log(li);
+//     ol.append(li)
+//     li.addEventListener("click",()=>{
+//         li.remove()
+//     })
     
-})
+// })
 
 
+let input = document.querySelector("input")
 
+function clickVal(e){
+    input.value += e
+}
 
+function delAll(){
+    input.value=""
+}
+
+function del(){
+    input.value = input.value.slice(0,input.value.length-1)
+    
+}
+
+function eq(){
+    input.value = eval(input.value)
+}
 
 
 
